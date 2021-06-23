@@ -15,7 +15,8 @@ services:
     ports:
       - 127.0.0.1:8080:8080
     volumes:
-      - C:\Users\SKTelecom\.aws:/.aws
+    #  - C:\Users\SKTelecom\.aws:/.aws
+      - /home/ubuntu/.aws:/.aws
   test-mysql:
     image: mysql:8.0.23
     # volumes:
