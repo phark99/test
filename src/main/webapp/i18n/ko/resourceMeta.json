@@ -1,0 +1,39 @@
+{
+  "testApp": {
+    "resourceMeta": {
+      "home": {
+        "title": "Resource Metas",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Resource Meta",
+        "createOrEditLabel": "Create or edit a Resource Meta",
+        "notFound": "No Resource Metas found"
+      },
+      "created": "A new Resource Meta is created with identifier {{ param }}",
+      "updated": "A Resource Meta is updated with identifier {{ param }}",
+      "deleted": "A Resource Meta is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Resource Meta {{ id }}?"
+      },
+      "detail": {
+        "title": "Resource Meta"
+      },
+      "id": "Id",
+      "type": "Type",
+      "value": "Value",
+      "createdBy": "Created By",
+      "createdAt": "Created At",
+      "modifiedBy": "Modified By",
+      "modifiedAt": "Modified At",
+      "resource": "Resource",
+      "help": {
+        "id": "id",
+        "type": "type",
+        "value": "value",
+        "createdBy": "created_by",
+        "createdAt": "created_at",
+        "modifiedBy": "modified_by",
+        "modifiedAt": "modified_at"
+      }
+    }
+  }
+}

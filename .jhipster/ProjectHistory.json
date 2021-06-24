@@ -1,0 +1,71 @@
+{
+  "name": "ProjectHistory",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long",
+      "javadoc": "id"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "javadoc": "name"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "javadoc": "description"
+    },
+    {
+      "fieldName": "deptCode",
+      "fieldType": "String",
+      "javadoc": "deptCode"
+    },
+    {
+      "fieldName": "tags",
+      "fieldType": "String",
+      "javadoc": "tags"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String",
+      "javadoc": "status"
+    },
+    {
+      "fieldName": "mainAdminId",
+      "fieldType": "Long",
+      "javadoc": "mainAdminId"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "Long",
+      "javadoc": "createdBy",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "LocalDate",
+      "javadoc": "createdAt",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "project",
+      "otherEntityRelationshipName": "projectHistory",
+      "relationshipName": "project"
+    }
+  ],
+  "javadoc": "The ProjectHistory entity.\\n@author A true hipster",
+  "entityTableName": "project_history",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210624032748"
+}

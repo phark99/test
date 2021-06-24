@@ -48,6 +48,33 @@ public class CacheConfiguration {
             createCache(cm, com.skt.test.domain.User.class.getName());
             createCache(cm, com.skt.test.domain.Authority.class.getName());
             createCache(cm, com.skt.test.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.skt.test.domain.UserToken.class.getName());
+            createCache(cm, com.skt.test.domain.LoginHistory.class.getName());
+            createCache(cm, com.skt.test.domain.UserGroup.class.getName());
+            createCache(cm, com.skt.test.domain.UserGroup.class.getName() + ".users");
+            createCache(cm, com.skt.test.domain.UserGroup.class.getName() + ".roles");
+            createCache(cm, com.skt.test.domain.Api.class.getName());
+            createCache(cm, com.skt.test.domain.Api.class.getName() + ".apiMetas");
+            createCache(cm, com.skt.test.domain.Api.class.getName() + ".apiRequests");
+            createCache(cm, com.skt.test.domain.ApiMeta.class.getName());
+            createCache(cm, com.skt.test.domain.ApiRequest.class.getName());
+            createCache(cm, com.skt.test.domain.ApiRequest.class.getName() + ".apis");
+            createCache(cm, com.skt.test.domain.Resource.class.getName());
+            createCache(cm, com.skt.test.domain.Resource.class.getName() + ".resourceMetas");
+            createCache(cm, com.skt.test.domain.Resource.class.getName() + ".roles");
+            createCache(cm, com.skt.test.domain.Resource.class.getName() + ".projectResources");
+            createCache(cm, com.skt.test.domain.ResourceMeta.class.getName());
+            createCache(cm, com.skt.test.domain.Project.class.getName());
+            createCache(cm, com.skt.test.domain.Project.class.getName() + ".resources");
+            createCache(cm, com.skt.test.domain.Project.class.getName() + ".projectHistories");
+            createCache(cm, com.skt.test.domain.ProjectHistory.class.getName());
+            createCache(cm, com.skt.test.domain.Role.class.getName());
+            createCache(cm, com.skt.test.domain.Role.class.getName() + ".users");
+            createCache(cm, com.skt.test.domain.Role.class.getName() + ".resources");
+            createCache(cm, com.skt.test.domain.Role.class.getName() + ".menus");
+            createCache(cm, com.skt.test.domain.Role.class.getName() + ".userGroups");
+            createCache(cm, com.skt.test.domain.Menu.class.getName());
+            createCache(cm, com.skt.test.domain.Menu.class.getName() + ".roles");
             // jhipster-needle-ehcache-add-entry
         };
     }

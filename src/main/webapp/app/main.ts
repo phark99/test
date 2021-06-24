@@ -27,6 +27,18 @@ import TranslationService from '@/locale/translation.service';
 import UserOAuth2Service from '@/entities/user/user.oauth2.service';
 /* tslint:disable */
 
+import UserTokenService from '@/entities/user-token/user-token.service';
+import LoginHistoryService from '@/entities/login-history/login-history.service';
+import UserGroupService from '@/entities/user-group/user-group.service';
+import ApiService from '@/entities/api/api.service';
+import ApiMetaService from '@/entities/api-meta/api-meta.service';
+import ApiRequestService from '@/entities/api-request/api-request.service';
+import ResourceService from '@/entities/resource/resource.service';
+import ResourceMetaService from '@/entities/resource-meta/resource-meta.service';
+import ProjectService from '@/entities/project/project.service';
+import ProjectHistoryService from '@/entities/project-history/project-history.service';
+import RoleService from '@/entities/role/role.service';
+import MenuService from '@/entities/menu/menu.service';
 // jhipster-needle-add-entity-service-to-main-import - JHipster will import entities services here
 
 /* tslint:enable */
@@ -85,6 +97,18 @@ new Vue({
 
     userOAuth2Service: () => new UserOAuth2Service(),
     translationService: () => translationService,
+    userTokenService: () => new UserTokenService(),
+    loginHistoryService: () => new LoginHistoryService(),
+    userGroupService: () => new UserGroupService(),
+    apiService: () => new ApiService(),
+    apiMetaService: () => new ApiMetaService(),
+    apiRequestService: () => new ApiRequestService(),
+    resourceService: () => new ResourceService(),
+    resourceMetaService: () => new ResourceMetaService(),
+    projectService: () => new ProjectService(),
+    projectHistoryService: () => new ProjectHistoryService(),
+    roleService: () => new RoleService(),
+    menuService: () => new MenuService(),
     // jhipster-needle-add-entity-service-to-main - JHipster will import entities services here
     accountService: () => accountService,
   },

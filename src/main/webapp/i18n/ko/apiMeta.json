@@ -1,0 +1,41 @@
+{
+  "testApp": {
+    "apiMeta": {
+      "home": {
+        "title": "Api Metas",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Api Meta",
+        "createOrEditLabel": "Create or edit a Api Meta",
+        "notFound": "No Api Metas found"
+      },
+      "created": "A new Api Meta is created with identifier {{ param }}",
+      "updated": "A Api Meta is updated with identifier {{ param }}",
+      "deleted": "A Api Meta is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Api Meta {{ id }}?"
+      },
+      "detail": {
+        "title": "Api Meta"
+      },
+      "id": "Id",
+      "appId": "App Id",
+      "type": "Type",
+      "value": "Value",
+      "createdBy": "Created By",
+      "createdAt": "Created At",
+      "modifiedBy": "Modified By",
+      "modifiedAt": "Modified At",
+      "api": "Api",
+      "help": {
+        "id": "id",
+        "appId": "app_id",
+        "type": "type",
+        "value": "value",
+        "createdBy": "created_by",
+        "createdAt": "created_at",
+        "modifiedBy": "modified_by",
+        "modifiedAt": "modified_at"
+      }
+    }
+  }
+}

@@ -10,6 +10,7 @@ phases:
     commands:
     - echo Build started on `date`
     #- mvn install
+    - chmod +x mvnw
     - ./mvnw -Pdev package verify jib:dockerBuild --offline
   post_build:
     commands:

@@ -1,0 +1,52 @@
+{
+  "testApp": {
+    "api": {
+      "home": {
+        "title": "Apis",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Api",
+        "createOrEditLabel": "Create or edit a Api",
+        "notFound": "No Apis found"
+      },
+      "created": "A new Api is created with identifier {{ param }}",
+      "updated": "A Api is updated with identifier {{ param }}",
+      "deleted": "A Api is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Api {{ id }}?"
+      },
+      "detail": {
+        "title": "Api"
+      },
+      "id": "Id",
+      "name": "Name",
+      "projectId": "Project Id",
+      "managerId": "Manager Id",
+      "apiType": "Api Type",
+      "host": "Host",
+      "port": "Port",
+      "uri": "Uri",
+      "version": "Version",
+      "createdBy": "Created By",
+      "createdAt": "Created At",
+      "modifiedBy": "Modified By",
+      "modifiedAt": "Modified At",
+      "apiMeta": "Api Meta",
+      "apiRequest": "Api Request",
+      "help": {
+        "id": "id",
+        "name": "name",
+        "projectId": "project_id",
+        "managerId": "manager_id",
+        "apiType": "api_type",
+        "host": "host",
+        "port": "port",
+        "uri": "uri",
+        "version": "version",
+        "createdBy": "created_by",
+        "createdAt": "created_at",
+        "modifiedBy": "modified_by",
+        "modifiedAt": "modified_at"
+      }
+    }
+  }
+}

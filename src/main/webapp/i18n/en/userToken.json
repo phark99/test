@@ -1,0 +1,38 @@
+{
+  "testApp": {
+    "userToken": {
+      "home": {
+        "title": "User Tokens",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new User Token",
+        "createOrEditLabel": "Create or edit a User Token",
+        "notFound": "No User Tokens found"
+      },
+      "created": "A new User Token is created with identifier {{ param }}",
+      "updated": "A User Token is updated with identifier {{ param }}",
+      "deleted": "A User Token is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete User Token {{ id }}?"
+      },
+      "detail": {
+        "title": "User Token"
+      },
+      "id": "ID",
+      "accToken": "Acc Token",
+      "accExpTime": "Acc Exp Time",
+      "refToken": "Ref Token",
+      "refExpTime": "Ref Exp Time",
+      "createdBy": "Created By",
+      "createdAt": "Created At",
+      "user": "User",
+      "help": {
+        "accToken": "acc_token",
+        "accExpTime": "acc_exp_time",
+        "refToken": "ref_token",
+        "refExpTime": "ref_exp_time",
+        "createdBy": "created_by",
+        "createdAt": "created_at"
+      }
+    }
+  }
+}

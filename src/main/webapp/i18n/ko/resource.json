@@ -1,0 +1,43 @@
+{
+  "testApp": {
+    "resource": {
+      "home": {
+        "title": "Resources",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Resource",
+        "createOrEditLabel": "Create or edit a Resource",
+        "notFound": "No Resources found"
+      },
+      "created": "A new Resource is created with identifier {{ param }}",
+      "updated": "A Resource is updated with identifier {{ param }}",
+      "deleted": "A Resource is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Resource {{ id }}?"
+      },
+      "detail": {
+        "title": "Resource"
+      },
+      "id": "Id",
+      "type": "Type",
+      "name": "Name",
+      "status": "Status",
+      "createdBy": "Created By",
+      "createdAt": "Created At",
+      "modifiedBy": "Modified By",
+      "modifiedAt": "Modified At",
+      "resourceMeta": "Resource Meta",
+      "role": "Role",
+      "projectResource": "Project Resource",
+      "help": {
+        "id": "id",
+        "type": "type",
+        "name": "name",
+        "status": "status",
+        "createdBy": "created_by",
+        "createdAt": "created_at",
+        "modifiedBy": "modified_by",
+        "modifiedAt": "modified_at"
+      }
+    }
+  }
+}

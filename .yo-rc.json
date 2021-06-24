@@ -41,6 +41,21 @@
     "jwtSecretKey": "NGM4ZmVjNTIxMWZjZjZlMjRiZDAzMDlmMzk3ZTJkNGYwNjNhOTJiZTdjMGM0YjlkYzJiYjJlY2Q5MmI5ODlmYTllM2U5NTE3Mjk5YjcxM2I4Mzk1MTBjOTE3MjAwOGZlNjBkNTk5MWEwZTJiNzYzYjFhYzdkMTk4MTI0Njc2NDE=",
     "clientPackageManager": "npm",
     "clientThemeVariant": "",
-    "languages": ["ko", "en"]
+    "languages": ["ko", "en"],
+    "entities": [
+      "UserToken",
+      "LoginHistory",
+      "UserGroup",
+      "Api",
+      "ApiMeta",
+      "ApiRequest",
+      "Resource",
+      "ResourceMeta",
+      "Project",
+      "ProjectHistory",
+      "Role",
+      "Menu"
+    ],
+    "lastLiquibaseTimestamp": 1624505270000
   }
 }

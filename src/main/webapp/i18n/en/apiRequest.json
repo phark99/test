@@ -1,0 +1,43 @@
+{
+  "testApp": {
+    "apiRequest": {
+      "home": {
+        "title": "Api Requests",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Api Request",
+        "createOrEditLabel": "Create or edit a Api Request",
+        "notFound": "No Api Requests found"
+      },
+      "created": "A new Api Request is created with identifier {{ param }}",
+      "updated": "A Api Request is updated with identifier {{ param }}",
+      "deleted": "A Api Request is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Api Request {{ id }}?"
+      },
+      "detail": {
+        "title": "Api Request"
+      },
+      "id": "Id",
+      "apiId": "Api Id",
+      "clientType": "Client Type",
+      "projectId": "Project Id",
+      "description": "Description",
+      "createdBy": "Created By",
+      "createdAt": "Created At",
+      "modifiedBy": "Modified By",
+      "modifiedAt": "Modified At",
+      "api": "Api",
+      "help": {
+        "id": "id",
+        "apiId": "api_id",
+        "clientType": "client_type",
+        "projectId": "project_id",
+        "description": "description",
+        "createdBy": "created_by",
+        "createdAt": "created_at",
+        "modifiedBy": "modified_by",
+        "modifiedAt": "modified_at"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "name": "UserGroup",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long",
+      "javadoc": "id"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "javadoc": "name"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String",
+      "javadoc": "status"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "Long",
+      "javadoc": "created_by",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "LocalDate",
+      "javadoc": "created_at",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "modifiedBy",
+      "fieldType": "Long",
+      "javadoc": "modified_by"
+    },
+    {
+      "fieldName": "modifiedAt",
+      "fieldType": "LocalDate",
+      "javadoc": "modifiedAt"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "userGroup",
+      "relationshipName": "user",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "role",
+      "otherEntityRelationshipName": "userGroup",
+      "relationshipName": "role",
+      "ownerSide": true
+    }
+  ],
+  "javadoc": "The UserGroup entity.\\n@author A true hipster",
+  "entityTableName": "user_group",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210624032741"
+}

@@ -1,0 +1,48 @@
+{
+  "testApp": {
+    "role": {
+      "home": {
+        "title": "Roles",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Role",
+        "createOrEditLabel": "Create or edit a Role",
+        "notFound": "No Roles found"
+      },
+      "created": "A new Role is created with identifier {{ param }}",
+      "updated": "A Role is updated with identifier {{ param }}",
+      "deleted": "A Role is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Role {{ id }}?"
+      },
+      "detail": {
+        "title": "Role"
+      },
+      "id": "Id",
+      "name": "Name",
+      "description": "Description",
+      "type": "Type",
+      "applyTarget": "Apply Target",
+      "permission": "Permission",
+      "createdBy": "Created By",
+      "createdAt": "Created At",
+      "modifiedBy": "Modified By",
+      "modifiedAt": "Modified At",
+      "user": "User",
+      "resource": "Resource",
+      "menu": "Menu",
+      "userGroup": "User Group",
+      "help": {
+        "id": "id",
+        "name": "name",
+        "description": "description",
+        "type": "type",
+        "applyTarget": "applyTarget",
+        "permission": "permission",
+        "createdBy": "createdBy",
+        "createdAt": "createdAt",
+        "modifiedBy": "modifiedBy",
+        "modifiedAt": "modifiedAt"
+      }
+    }
+  }
+}

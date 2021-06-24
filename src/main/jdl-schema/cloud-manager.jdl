@@ -1,0 +1,325 @@
+/**
+ * The UserToken entity.
+ * @author A true hipster
+ */
+entity UserToken {
+  /** acc_token */
+  accToken String
+  /** acc_exp_time */
+  accExpTime LocalDate
+  /** ref_token */
+  refToken String
+  /** ref_exp_time */
+  refExpTime LocalDate
+  /** created_by */
+  createdBy Long required
+  /** created_at */
+  createdAt LocalDate required
+}
+ 
+/**
+ * The LoginHistory entity.
+ * @author A true hipster
+ */
+entity LoginHistory {
+  /** id */
+  id Long
+  /** created_at */
+  createdAt LocalDate required
+  /** userAgent */
+  userAgent String
+}
+/**
+ * 
+ * The UserGroup entity.
+ * @author A true hipster
+ */
+entity UserGroup {
+  /** id */
+  id Long
+  /** name */
+  name String
+  /** status */
+  status String
+  /** created_by */
+  createdBy Long required
+  /** created_at */
+  createdAt LocalDate required
+  /** modified_by */
+  modifiedBy Long
+  /** modifiedAt */
+  modifiedAt LocalDate
+}
+/**
+ * 
+ * The api entity.
+ * @author A true hipster
+ */
+entity Api {
+  /** id */
+  id Long
+  /** name */
+  name String required
+  /** project_id */
+  projectId Long required
+  /** manager_id */
+  managerId Long required
+  /** api_type */
+  apiType String required
+  /** host */
+  host String
+  /** port */
+  port Integer
+  /** uri */
+  uri String
+  /** version */
+  version String
+  /** created_by */
+  createdBy Long required
+  /** created_at */
+  createdAt LocalDate required
+  /** modified_by */
+  modifiedBy Long
+  /** modified_at */
+  modifiedAt LocalDate
+}
+/**
+ * 
+ * The ApiMeta entity.
+ * @author A true hipster
+ */
+entity ApiMeta {
+  /** id */
+  id Long
+  /** app_id */
+  appId Long required
+  /** type */
+  type String required
+  /** value */
+  value TextBlob
+  /** created_by */
+  createdBy Long required
+  /** created_at */
+  createdAt LocalDate required
+  /** modified_by */
+  modifiedBy Long
+  /** modified_at */
+  modifiedAt LocalDate
+}
+/**
+ * 
+ * The ApiRequest entity.
+ * @author A true hipster
+ */
+entity ApiRequest {
+  /** id */
+  id Long
+  /** api_id */
+  apiId Long required
+  /** client_type */
+  clientType String required
+  /** project_id */
+  projectId Long required
+  /** description */
+  description String
+  /** created_by */
+  createdBy Long required
+  /** created_at */
+  createdAt LocalDate required
+  /** modified_by */
+  modifiedBy Long
+  /** modified_at */
+  modifiedAt LocalDate
+}
+// api_request_constraint
+/**
+ * 
+ * The Resource entity.
+ * @author A true hipster
+ */
+entity Resource {
+  /** id */
+  id Long
+  /** type */
+  type String required
+  /** name */
+  name String required
+  /** status */
+  status String required
+  /** created_by */
+  createdBy Long required
+  /** created_at */
+  createdAt LocalDate required
+  /** modified_by */
+  modifiedBy Long
+  /** modified_at */
+  modifiedAt LocalDate
+}
+/**
+ * 
+ * The ResourceMeta entity.
+ * @author A true hipster
+ */
+entity ResourceMeta {
+  /** id */
+  id Long
+  /** type */
+  type String required
+  /** value */
+  value String required
+  /** created_by */
+  createdBy Long required
+  /** created_at */
+  createdAt LocalDate required
+  /** modified_by */
+  modifiedBy Long
+  /** modified_at */
+  modifiedAt LocalDate
+}
+/**
+ * 
+ * The Project entity.
+ * @author A true hipster
+ */
+entity Project {
+  /** id */
+  id Long
+  /** name */
+  name String
+  /** description */
+  description String
+  /** deptCode */
+  deptCode String
+  /** tags */
+  tags String
+  /** status */
+  status String
+  /** mainAdminId */
+  mainAdminId Long
+  /** createdBy */
+  createdBy Long required
+  /** createdAt */
+  createdAt LocalDate required
+  /** modifiedBy */
+  modifiedBy Long
+  /** modifiedAt */
+  modifiedAt LocalDate
+}
+/**
+ * 
+ * The ProjectHistory entity.
+ * @author A true hipster
+ */
+entity ProjectHistory {
+  /** id */
+  id Long
+  /** name */
+  name String
+  /** description */
+  description String
+  /** deptCode */
+  deptCode String
+  /** tags */
+  tags String
+  /** status */
+  status String
+  /** mainAdminId */
+  mainAdminId Long
+  /** createdBy */
+  createdBy Long required
+  /** createdAt */
+  createdAt LocalDate required
+}
+/**
+ * 
+ * The Role entity.
+ * @author A true hipster
+ */
+entity Role {
+  /** id */
+  id Long
+  /** name */
+  name String
+  /** description */
+  description String
+  /** type */
+  type String
+  /** applyTarget */
+  applyTarget String
+  /** permission */
+  permission String
+  /** createdBy */
+  createdBy Long required
+  /** createdAt */
+  createdAt LocalDate required
+  /** modifiedBy */
+  modifiedBy Long
+  /** modifiedAt */
+  modifiedAt LocalDate
+}
+/**
+ * 
+ * The Menu entity.
+ * @author A true hipster
+ */
+entity Menu {
+  /** id */
+  id Long
+  /** name */
+  name String
+  /** description */
+  description String
+  /** depth */
+  depth Integer
+  /** dispOrder */
+  dispOrder Integer
+  /** dispYn */
+  dispYn String
+  /** uriPath */
+  uriPath String
+  /** parentId */
+  parentId Long
+  /** createdBy */
+  createdBy Long required
+  /** createdAt */
+  createdAt LocalDate required
+  /** modifiedBy */
+  modifiedBy Long
+  /** modifiedAt */
+  modifiedAt LocalDate
+}
+/**
+ * 
+ * Many to many relationship.
+ */
+relationship ManyToMany {
+  Menu{role} to Role{menu}
+  Role{user} to User{role}
+  Role{resource} to Resource{role}
+  UserGroup{user} to User{userGroup}
+  UserGroup{role} to Role{userGroup}
+  ApiRequest{api} to Api{apiRequest}
+  Project{resource} to Resource{projectResource}
+}
+/**
+ * 
+ * Many to many relationship.
+ */
+relationship OneToOne {
+  UserToken{user} to User{token}
+}
+/**
+ * Many to one relationship.
+ */
+relationship ManyToOne {
+  LoginHistory{user} to User{loginHistory}
+  ApiMeta{api} to Api{apiMeta}
+  ResourceMeta{resource} to Resource{resourceMeta}
+  ProjectHistory{project} to Project{projectHistory}
+}
+ 
+dto * with mapstruct
+ 
+service all with serviceImpl
+ 
+paginate * with pagination

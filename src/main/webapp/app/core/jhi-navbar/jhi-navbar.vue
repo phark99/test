@@ -29,6 +29,54 @@
             <font-awesome-icon icon="th-list" />
             <span class="no-bold" v-text="$t('global.menu.entities.main')">Entities</span>
           </span>
+          <b-dropdown-item to="/user-token">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.userToken')">User Token</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/login-history">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.loginHistory')">Login History</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/user-group">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.userGroup')">User Group</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/api">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.api')">Api</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/api-meta">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.apiMeta')">Api Meta</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/api-request">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.apiRequest')">Api Request</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/resource">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.resource')">Resource</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/resource-meta">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.resourceMeta')">Resource Meta</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/project">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.project')">Project</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/project-history">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.projectHistory')">Project History</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/role">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.role')">Role</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/menu">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.menu')">Menu</span>
+          </b-dropdown-item>
           <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
         </b-nav-item-dropdown>
         <b-nav-item-dropdown

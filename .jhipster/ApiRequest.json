@@ -1,0 +1,75 @@
+{
+  "name": "ApiRequest",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long",
+      "javadoc": "id"
+    },
+    {
+      "fieldName": "apiId",
+      "fieldType": "Long",
+      "javadoc": "api_id",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "clientType",
+      "fieldType": "String",
+      "javadoc": "client_type",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "projectId",
+      "fieldType": "Long",
+      "javadoc": "project_id",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "javadoc": "description"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "Long",
+      "javadoc": "created_by",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "LocalDate",
+      "javadoc": "created_at",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "modifiedBy",
+      "fieldType": "Long",
+      "javadoc": "modified_by"
+    },
+    {
+      "fieldName": "modifiedAt",
+      "fieldType": "LocalDate",
+      "javadoc": "modified_at"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "api",
+      "otherEntityRelationshipName": "apiRequest",
+      "relationshipName": "api",
+      "ownerSide": true
+    }
+  ],
+  "javadoc": "The ApiRequest entity.\\n@author A true hipster",
+  "entityTableName": "api_request",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210624032744"
+}

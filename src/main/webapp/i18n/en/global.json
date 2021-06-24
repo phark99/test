@@ -7,6 +7,18 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entities",
+        "userToken": "User Token",
+        "loginHistory": "Login History",
+        "userGroup": "User Group",
+        "api": "Api",
+        "apiMeta": "Api Meta",
+        "apiRequest": "Api Request",
+        "resource": "Resource",
+        "resourceMeta": "Resource Meta",
+        "project": "Project",
+        "projectHistory": "Project History",
+        "role": "Role",
+        "menu": "Menu",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

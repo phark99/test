@@ -1,0 +1,40 @@
+{
+  "name": "LoginHistory",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long",
+      "javadoc": "id"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "LocalDate",
+      "javadoc": "created_at",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "userAgent",
+      "fieldType": "String",
+      "javadoc": "userAgent"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "loginHistory",
+      "relationshipName": "user"
+    }
+  ],
+  "javadoc": "The LoginHistory entity.\\n@author A true hipster",
+  "entityTableName": "login_history",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210624032740"
+}

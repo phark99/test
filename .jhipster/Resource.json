@@ -1,0 +1,83 @@
+{
+  "name": "Resource",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long",
+      "javadoc": "id"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "String",
+      "javadoc": "type",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "javadoc": "name",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String",
+      "javadoc": "status",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "Long",
+      "javadoc": "created_by",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "LocalDate",
+      "javadoc": "created_at",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "modifiedBy",
+      "fieldType": "Long",
+      "javadoc": "modified_by"
+    },
+    {
+      "fieldName": "modifiedAt",
+      "fieldType": "LocalDate",
+      "javadoc": "modified_at"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "resourceMeta",
+      "otherEntityRelationshipName": "resource",
+      "relationshipName": "resourceMeta"
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "role",
+      "otherEntityRelationshipName": "resource",
+      "relationshipName": "role",
+      "ownerSide": false
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "project",
+      "otherEntityRelationshipName": "resource",
+      "relationshipName": "projectResource",
+      "ownerSide": false
+    }
+  ],
+  "javadoc": "The Resource entity.\\n@author A true hipster",
+  "entityTableName": "resource",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210624032745"
+}

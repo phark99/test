@@ -1,0 +1,57 @@
+{
+  "name": "UserToken",
+  "fields": [
+    {
+      "fieldName": "accToken",
+      "fieldType": "String",
+      "javadoc": "acc_token"
+    },
+    {
+      "fieldName": "accExpTime",
+      "fieldType": "LocalDate",
+      "javadoc": "acc_exp_time"
+    },
+    {
+      "fieldName": "refToken",
+      "fieldType": "String",
+      "javadoc": "ref_token"
+    },
+    {
+      "fieldName": "refExpTime",
+      "fieldType": "LocalDate",
+      "javadoc": "ref_exp_time"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "Long",
+      "javadoc": "created_by",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "LocalDate",
+      "javadoc": "created_at",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "token",
+      "relationshipName": "user",
+      "ownerSide": true
+    }
+  ],
+  "javadoc": "The UserToken entity.\\n@author A true hipster",
+  "entityTableName": "user_token",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210624032739"
+}
